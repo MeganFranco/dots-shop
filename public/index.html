@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html ng-app="DotsShop">
+
+<head>
+    <title> </title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="=utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body ng-controller="MainController">
+
+    <div class="Navigation container">
+        <ul class="navbar row">
+            <div class="col-sm-3 col-md-3">
+                <a href="#/">
+                    <li class="navlink">Home</li>
+                </a>
+                <a href="#/about">
+                    <li class="navlink">About</li>
+                </a>
+                <a href="#/products">
+                    <li class="navlink">Products</li>
+                </a>
+            </div>
+            <div class="col-sm-5 col-md-7">
+                <a href="#/"><h3>DOT'S SHOP </h3></a>
+            </div>
+            <div class="col-sm-4 col-md-2">
+                <a href="#/cart"><ngcart-summary></ngcart-summary></a>
+            </div>
+        </ul>
+    </div>
+
+    <div ng-view>
+
+    </div>
+    
+    <footer class="container">
+       <div class="row">
+           <div  class="footer-div col-sm-3">
+               <a href="#/" class="footer-links">Home</a><br>
+               <a href="#/about" class="footer-links">About</a><br>
+               <a href="#/products" class="footer-links">Products</a>
+           </div>
+           <div class="footer-div col-sm-3">
+               Contact us at:<br>
+               <a class="footer-links">Dots_Shop@gmail.com</a>
+           </div>
+       </div> 
+    </footer>
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
+    <script src=//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.js></script>
+    <script src="../bower_components/ngCart/dist/ngCart.js"></script>
+    <script src="app.js"></script>
+    <script src="directives/cart.js"></script>
+    <script src="templates/about/about.js"></script>
+    <script src="templates/products/products.js"></script>
+    <script src="templates/home/home.js"></script>
+</body>
+
+</html>
