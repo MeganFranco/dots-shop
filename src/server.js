@@ -2,6 +2,7 @@ var express = require("express");
 var app = express();
 var bodyParser = require("body-parser");
 var cors = require("cors");
+var path = require("path")
 var mongoose = require("mongoose");
 
 //require routes here**************
@@ -14,6 +15,7 @@ app.use(productRouter);
 
 app.use("/", express.static("public"));
 app.use('/bower_components', express.static(__dirname + '/../bower_components'));
+app.use(express.static(path.join(__dirname, "..", "public")))
 
 mongoose.connect("mongodb://localhost/products");
 
