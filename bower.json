@@ -1,0 +1,20 @@
+{
+  "name": "dots-shop",
+  "description": "",
+  "main": "app.js",
+  "authors": [
+    "Megan Franco <francomegan@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/MeganFranco/dots-shop",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ngCart": "ngcart#^1.0.0"
+  }
+}
